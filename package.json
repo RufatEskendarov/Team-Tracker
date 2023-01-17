@@ -1,0 +1,22 @@
+{
+  "name": "team-tracker",
+  "version": "1.0.0",
+  "description": "Employee tracking app",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RufatEskendarov/Team-Tracker.git"
+  },
+  "author": "RufatEskendarov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RufatEskendarov/Team-Tracker/issues"
+  },
+  "homepage": "https://github.com/RufatEskendarov/Team-Tracker#readme"
+}
