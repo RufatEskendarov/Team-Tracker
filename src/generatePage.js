@@ -13,19 +13,23 @@ function generateManagerData(employees) {
   let managerData = "";
   for (let index = 0; index < managers.length; index++) {
     managerData += `
-<div class="card">
+<div class="card has-background-grey-darker">
   <div class="card-content">
-    <div class="title has-text-link-dark has-background-primary">
+    <div class="title has-text-warning has-background-black-bis">
       <p>${managers[index].getName()}</p>
       <p>${managers[index].getRole()}</p>
     </div>
-    <p class="subtitle">ID: ${managers[index].getId()}</p>
-    <p class="subtitle">Office Number: ${managers[index].getOfficeNumber()}</p>
+    <p class="subtitle has-text-grey-light">ID: ${managers[index].getId()}</p>
+    <p class="subtitle has-text-grey-light">Office Number: ${managers[
+      index
+    ].getOfficeNumber()}</p>
   </div>
-  <footer class="card-footer">
+  <footer class="card-footer has-background-black-ter">
     <p class="card-footer-item">
       <span>
-      <a href="mailto: " target="_blank"> ${managers[index].getEmail()}</a>
+      <a href="mailto:${managers[
+        index
+      ].getEmail()}" target="_blank"> ${managers[index].getEmail()}</a>
       </span>
     </p>
   </footer>
@@ -43,15 +47,15 @@ function generateEngineerData(employees) {
   let engineerData = "";
   for (let index = 0; index < engineers.length; index++) {
     engineerData += `
-          <div class="card">
+          <div class="card has-background-grey-darker">
   <div class="card-content">
-    <div class="title has-text-link-dark has-background-primary">
+    <div class="title has-background-black-bis has-text-warning">
       <p>${engineers[index].getName()}</p>
       <p>${engineers[index].getRole()}</p>
     </div>  
-    <p class="subtitle">ID: ${engineers[index].getId()}
+    <p class="subtitle has-text-grey-light">ID: ${engineers[index].getId()}
     </p>
-    <p class="subtitle">
+    <p class="subtitle has-text-grey-light">
     <span>GitHub: 
     <a href="https://github.com/${engineers[
       index
@@ -59,10 +63,12 @@ function generateEngineerData(employees) {
     </span>
   </p>
   </div>
-  <footer class="card-footer">
+  <footer class="card-footer has-background-black-ter">
     <p class="card-footer-item">
       <span>
-      <a href="mailto: " target="_blank"> ${engineers[index].getEmail()}</a>
+      <a href="mailto:${engineers[
+        index
+      ].getEmail()}" target="_blank"> ${engineers[index].getEmail()}</a>
       </span>
     </p>
   </footer>
@@ -78,21 +84,25 @@ function generateInternData(employees) {
   let internData = "";
   for (let index = 0; index < interns.length; index++) {
     internData += `
-    <div class="card">
+    <div class="card has-background-grey-darker">
   <div class="card-content">
-    <div class="title has-text-link-dark has-background-primary">
+    <div class="title has-text-warning has-background-black-bis">
       <p>${interns[index].getName()}</p>
       <p>${interns[index].getRole()}</p>
     </div>
-    <p class="subtitle">ID: ${interns[index].getId()}
+    <p class="subtitle has-text-grey-light">ID: ${interns[index].getId()}
     </p>
-    <p class="subtitle">School: ${interns[index].getSchool()}
+    <p class="subtitle has-text-grey-light">School: ${interns[
+      index
+    ].getSchool()}
   </p>
   </div>
-  <footer class="card-footer">
+  <footer class="card-footer has-background-black-ter">
     <p class="card-footer-item">
       <span>
-      <a href="mailto: " target="_blank"> ${interns[index].getEmail()}</a>
+      <a href="mailto:${interns[index].getEmail()}" target="_blank"> ${interns[
+      index
+    ].getEmail()}</a>
       </span>
     </p>
   </footer>
@@ -117,10 +127,10 @@ function generatePage(answers) {
         <title>Document</title>
     </head>
     <body "is-family-primary">
-    <header class="hero is-primary">
+    <header class="hero is-primary has-background-black-bis">
         <div class="hero-body">
-          <p class="hero is-size-2 has-text-centered">
-            The Team
+          <p class="hero is-size-2 has-text-centered has-text-warning has-text-weight-bold">
+            The Team Tracker
           </p>
         </div>
     </header>
